@@ -3,14 +3,14 @@ import React from "react";
 
 const PhotoCard = props => {
     return (
-        <div className="photo-img" >
+        <div className="photo-nasa" >
             <img src={props.data.url} alt='NASA pick of the day' />
             <h2>Photo Title: {props.data.title}</h2>
-            <p>Date: {props.data.date}</p>
+            <span>Date: 🚀{props.data.date}🚀</span>
             <p>Explanation:  {props.data.explanation}</p>
-            <div className="bottom">
+            <div className="bottom-quote">
                 <p>"{props.qdata.quote}"</p>
-                <p>{props.qdata.author} - author</p>
+                <p>- {props.qdata.author}</p>
                 {/* <p>Date: {props.qdata.date}</p> */}
             </div>
         </div>
